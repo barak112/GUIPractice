@@ -76,12 +76,12 @@ def change_ui_color():
 
 #changes the UI color back to its default white color
 def default_UI_color():
-    color = "#ffffff"
+    color = "#f0f0f0"
     root.configure(bg=color)
     sub_widgets_frame.configure(bg=color)
 
 #creates the sub widgets frame
-sub_widgets_frame = tk.LabelFrame(root, bg="White", borderwidth=0)
+sub_widgets_frame = tk.LabelFrame(root, bg="#f0f0f0", borderwidth=0)
 #sets its column configurations
 columnconfigure(sub_widgets_frame, 3)
 
@@ -117,7 +117,7 @@ rowconfigure(widget2frame, 2)
 
 #Creates the widget 2 content components
 widget2_title = tk.Label(widget2frame, bg="LightGray", text="Did you know?", font=("Arial", 40))
-widget2_content = tk.Label(widget2frame, bg="LightGray", text="I'm more of a backend developer than a front end developer (better at logical coding than UI designing)", font=("Arial", 22), wraplength=216)
+widget2_content = tk.Label(widget2frame, bg="LightGray", text="I'm more of a backend developer than a frontend developer (better at logical coding than UI designing)", font=("Arial", 22), wraplength=216)
 
 #grids each component in the right row and column
 widget2_title.grid(row=0, column=0)
